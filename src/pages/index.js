@@ -4,13 +4,10 @@ import styles from '@/styles/Home.module.css'
 import { SignUp, SignIn, useAuth } from "@clerk/nextjs";
 import { useRouter } from 'next/router';
 
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const { userID, getToken, isLoaded, isSignedIn } = useAuth();
-
   const router = useRouter()
   
   //logged in, so redirect to /todos
@@ -29,7 +26,6 @@ export default function Home() {
         </Head>
 
         <main className={styles.main}>
-
           <div class="columns is-multiline is-centered is-narrow">
             <div class="column is-one-quarter">
               <img src = '/SplashPage.jpeg' class={styles.landingImage}></img> 
@@ -45,7 +41,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </main>
       </>
   }

@@ -1,16 +1,35 @@
+
+// /*
+// * Auto generated Codehooks (c) example
+// * Install: npm i codehooks-js
+// */
+// import {app} from 'codehooks-js'
+// import {crudlify} from 'codehooks-crudlify'
+// import {date, object, string, number, boolean} from 'yup';
+// import jwtDecode from 'jwt-decode';
+
+// // test route for https://<PROJECTID>.api.codehooks.io/dev/
+// app.get('/', (req, res) => {
+//   res.send('CRUD server ready')
+// })
+
+// // Use Crudlify to create a REST API for any collection
+// app.crudlify()
+
+// // bind to serverless runtime
+// export default app.init();
+
+
+
+
 /*
 * Auto generated Codehooks (c) example
 * Install: npm i codehooks-js codehooks-crudlify
 */
 import {app, Datastore} from 'codehooks-js'
 import {crudlify} from 'codehooks-crudlify'
-import { date, object, string, number, boolean} from 'yup';
+import {date, object, string, number, boolean} from 'yup';
 import jwtDecode from 'jwt-decode';
-
-// test route for https://<PROJECTID>.api.codehooks.io/dev/
-// app.get('/', (req, res) => {
-//   res.send('CRUD server ready')
-// })
 
 const review = object({
   name: string().required(),
@@ -27,7 +46,6 @@ const wishList = object({
   note: string(),
   userId: string().required(),
   address: string(),
-  // createdOn: date().default(() => new Date()),
   createdOn: date().default(Date.now),
 })
 

@@ -1,7 +1,6 @@
 import styles from './Categories.module.css';
 import Link from 'next/link';
 
-
 export default function Categories({ categories}) {
 
   return (

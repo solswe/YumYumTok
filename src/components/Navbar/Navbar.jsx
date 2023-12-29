@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { ClerkProvider, SignedIn, SignedOut, useClerk, UserButton } from '@clerk/nextjs'
+import { useClerk } from '@clerk/nextjs'
 
 export default function Navbar() {
   const [clicked, setClick] = useState(false);

@@ -10,10 +10,10 @@ const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
 const placesLibrary = "https://maps.googleapis.com/maps/api/js?key=" + apiKey + "&libraries=places";
 
 export default function App({ Component, pageProps }) {
-  // Get the pathname
+  // get the pathname
   const { pathname } = useRouter();
 
-  // Check if the current route matches a public page
+  // check if the current route matches a public page
   const isPublicPage = publicPages.includes(pathname);
 
   return <>
@@ -37,7 +37,6 @@ export default function App({ Component, pageProps }) {
           </SignedOut>
         </>
       )}
-
     </ClerkProvider>
   </>
 }

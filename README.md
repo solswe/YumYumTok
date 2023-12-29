@@ -62,4 +62,4 @@ Python, Next.js, React, NoSQL([Codehooks.io](https://codehooks.io/)), Javascript
 
 
 ## Link to Site
-<https://booktok-project2.netlify.app/>
+<https://yumyumtok.netlify.app>
